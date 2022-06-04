@@ -127,5 +127,8 @@ app.get("/*",function(req, res){
 });
 
 
-app.listen(8080);
+var s_port=process.env.PORT || 5000;
+server.listen(s_port);
+
+app.listen(s_port);
 console.log('Serverul ruleaza!');
