@@ -1,0 +1,31 @@
+@import url("homepage.css");
+table{
+    border: 5px inset var(--alb);
+    text-align: center;
+    border-collapse: collapse;
+}
+thead tr{
+    border-bottom: 2px solid var(--alb);
+}
+tbody tr:nth-child(even) {
+    border-bottom: 1px solid var(--gri-inchis);
+  }
+
+tbody tr:nth-child(odd) {
+   border-bottom: 1px solid var(--gri-deschis);
+  }
+table caption{
+    caption-side: bottom;
+}
+tr:hover{
+    outline: 5px solid;
+    outline-color: rgba(255,255,255,0.7);
+    transition-duration: 0.5s;
+}
+th, td{
+    border-right: 1px solid var(--alb);
+}
+
+th:nth-last-child(), td:nth-last-child(){
+    border-right: 0;
+}

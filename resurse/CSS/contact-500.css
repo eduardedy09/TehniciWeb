@@ -1,0 +1,17 @@
+@import url("homepage.css");
+@import url("contact.css");
+@media screen and (max-width:500px){
+    .contactlinks{
+        font-size: large;
+    }
+    img{
+        width: 50%;
+    }
+    #layoutcontact{
+        display: block;
+    }
+    #layoutcontact>div{
+        border: 0.5px solid var(--alb);
+        padding: 5px;
+    }
+}

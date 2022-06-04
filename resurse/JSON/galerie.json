@@ -1,0 +1,113 @@
+{
+    "cale_galerie":"resurse/IMG/galerie",
+    "IMG":[
+        {
+            "cale_imagine":"1.jpg",
+            "titlu":"Yeezy 320",
+            "descriere":"Yeezy albi",
+            "sfert_ora":"3"
+        },
+        {
+            "cale_imagine":"2.jpg",
+            "titlu":"Adidas",
+            "descriere":"Adidas gri",
+            "sfert_ora":"3"
+        },
+        {
+            "cale_imagine":"3.jpg",
+            "titlu":"Converse High",
+            "descriere":"Converse High Rosii",
+            "sfert_ora":"1"
+        },
+        {
+            "cale_imagine":"4.jpg",
+            "titlu":"Converse High",
+            "descriere":"Converse High Portocalii",
+            "sfert_ora":"3"
+        },
+        {
+            "cale_imagine":"5.jpg",
+            "titlu":"Nike Air Jordan 1 Mid",
+            "descriere":"Jordan 1 Mid BWR",
+            "sfert_ora":"1"
+        },
+        {
+            "cale_imagine":"6.jpg",
+            "titlu":"Nike Air Jordan 11",
+            "descriere":"Jordan 11 Full Black",
+            "sfert_ora":"3"
+        },
+        {
+            "cale_imagine":"7.jpg",
+            "titlu":"New Balance",
+            "descriere":"New Balance albi",
+            "sfert_ora":"3"
+        },
+        {
+            "cale_imagine":"8.jpg",
+            "titlu":"New Balance",
+            "descriere":"New Balance colorful",
+            "sfert_ora":"3"
+        },
+        {
+            "cale_imagine":"9.jpg",
+            "titlu":"Puma RS-Z",
+            "descriere":"Puma deschisi",
+            "sfert_ora":"3"
+        },
+        {
+            "cale_imagine":"10.jpg",
+            "titlu":"Vans SK-8 Low",
+            "descriere":"Vans Low Green",
+            "sfert_ora":"4"
+        },
+        {
+            "cale_imagine":"11.jpg",
+            "titlu":"Converse High",
+            "descriere":"Converse High crem",
+            "sfert_ora":"3"
+        },
+        {
+            "cale_imagine":"12.jpg",
+            "titlu":"Fila",
+            "descriere":"Fila Casual",
+            "sfert_ora":"3"
+        },
+        {
+            "cale_imagine":"13.jpg",
+            "titlu":"Nike Air Max 720",
+            "descriere":"Nike Air Max 720 BO",
+            "sfert_ora":"4"
+        },
+        {
+            "cale_imagine":"14.jpg",
+            "titlu":"Balenciaga TripleS",
+            "descriere":"Balenciaga TripleS Colorful",
+            "sfert_ora":"3"
+        },
+        {
+            "cale_imagine":"15.jpg",
+            "titlu":"Nike Air Jordan 1 Mid x Travis Scott",
+            "descriere":"Limited Edition Collabs",
+            "sfert_ora":"3"
+        },
+        {
+            "cale_imagine":"16.jpg",
+            "titlu":"Nike Air Jordan 6",
+            "descriere":"Nike Air Jordan 6 WB",
+            "sfert_ora":"2"
+        },
+        {
+            "cale_imagine":"17.jpg",
+            "titlu":"Nike Air Jordan 1 Mid",
+            "descriere":"Nike Air Jordan 1 Mid Chicago",
+            "sfert_ora":"3"
+        },
+        {
+            "cale_imagine":"18.jpg",
+            "titlu":"Asics Low",
+            "descriere":"Asics Low Blue",
+            "sfert_ora":"3"
+        }
+    ]
+}

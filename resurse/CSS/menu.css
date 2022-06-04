@@ -1,0 +1,113 @@
+@import url("homepage.css");
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--aproape-negru);
+  }
+li {
+    float: left;
+  }
+  
+li a {
+    display: block;
+    color: var(--alb);
+    text-align: center;
+    text-decoration: none;
+  }
+  
+.active{
+    background-color: var(--gri-inchis);
+  }
+  
+.dropdown {
+  
+    float: left;
+    overflow: hidden;
+  }
+  
+.dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: var(--alb);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: var(--gri-inchis);
+  }
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--gri-inchis);
+    min-width: 170px;
+  }
+  
+.dropdown-content a {
+    float: none;
+    color: var(--alb);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+.dropdown-content a:hover {
+    background-color: var(--aproape-negru);
+    color: var(--gri-deschis);
+  }
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+    animation-name: aparitie_meniu;
+    animation-iteration-count:1;
+    animation-duration:0.5s;
+    animation-timing-function:linear;
+  }
+
+.dropdown::after{
+    opacity: 0;
+    display:block;
+    /* Nu stiu ce dimensiuni sa pun */
+    width: 100%;
+    content: "\00a0";
+    font-size: 0.5rem;
+    background: linear-gradient(to right, var(--gri-inchis), var(--aproape-alb));
+    position: relative;
+    transition: 700ms;
+    margin-top: -0.5rem;
+  }
+  .dropdown:hover::after{
+    opacity: 1;
+  }
+
+  @keyframes aparitie_meniu{
+    0%{
+        opacity: 0;
+        transform:scale(0,0);
+    }
+    50%{
+        transform:scale(1,0.25);
+    }
+    100%{
+        opacity: 1;
+        transform:scale(1,1);
+    }
+  }
+
+  nav #hamburger {
+    display: none;
+  }
+  nav #hamburger img {
+    height: 100%;
+    width: auto;
+  }
+  nav #small-menu {
+    display: none;
+  }

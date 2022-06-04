@@ -1,0 +1,80 @@
+
+
+<p id="switch"><button class="theme-switcher" ><i class="far fa-sun"></i></button></p>
+<script>
+  // Select the button
+  const btn = document.querySelector(".theme-switcher");
+  // Select the theme preference from localStorage
+  const currentTheme = localStorage.getItem("theme");
+  // If the current theme in localStorage is "light"...
+  if (currentTheme == "light") {
+    // ...then use the .light-theme class
+    document.body.classList.add("light-theme");
+  }
+// Listen for a click on the button 
+  btn.addEventListener("click", function() {
+    // Toggle the .light-theme class on each click
+    document.body.classList.toggle("light-theme");
+    
+    // Let's say the theme is equal to dark
+    let theme = "dark";
+    // If the body contains the .dark-theme class...
+    if (document.body.classList.contains("light-theme")) {
+      // ...then let's make the theme dark
+      theme = "light";
+    }
+    // Then save the choice in localStorage
+    localStorage.setItem("theme", theme);
+  });
+</script>
+
+<h1 id="top">Sneaker-EM</h1>
+<nav>
+  <label id="hamburger" for="small-menu">
+    <img src="/resurse/IMG/hamburger.png" alt="menu">
+  </label>
+  <input id="small-menu" type="checkbox">
+    <ul>
+      <li>
+        <div class="dropdown active">
+          <button class="dropbtn"><a href="/index"><span class="fas fa-light fa-house"></span><span class="hidden"> Acasa</span></a>
+          </button>
+          <div class="dropdown-content">
+            <a href="#info">Despre noi</a>
+            <a href="#story">Istorie</a>
+            <a href="#sale">Reduceri</a>
+            <a href="#FAQ">Intrebari frecvente</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="dropdown">
+          <button class="dropbtn"><a href="/shop">Shop</a>
+          </button>
+        </div>
+      </li>
+    <li>
+      <div class="dropdown">
+        <button class="dropbtn"><a href="/reduceri">Reduceri</a>
+        </button>
+      </div>
+    </li>
+      <li>
+        <div class="dropdown">
+          <button class="dropbtn"><a>Galerie</a>
+          </button>
+          <div class="dropdown-content">
+            <a href="/galeriestatica">Statică</a>
+            <a href="/galerieanimata">Animată</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="dropdown">
+          <button class="dropbtn"><a href="/contact">Contact</a>
+          </button>
+        </div>
+      </li>
+  
+    </ul></nav>
+    <br>

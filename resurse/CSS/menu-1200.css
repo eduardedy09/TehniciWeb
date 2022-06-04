@@ -1,0 +1,7 @@
+@import url("menu.css");
+@import url("homepage.css");
+@media screen and (max-width:1200px) and (min-width:501px){
+    .hidden{
+        font-size: 0;
+    }
+}

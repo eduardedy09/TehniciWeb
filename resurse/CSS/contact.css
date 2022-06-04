@@ -1,0 +1,28 @@
+#layoutcontact>div{
+    border: 1px solid var(--alb);
+    padding: 10px;
+}
+#layoutcontact{
+    display: grid;
+    grid-template-areas: "zona-1 zona-1 zona-2 zona-2 zona-3 zona-3"
+                         "zona-1 zona-1 zona-2 zona-2 zona-3 zona-3";
+    width: 100%;
+}
+#layoutcontact>:first-child{
+    grid-area: zona-1;
+}
+#layoutcontact>:nth-child(2){
+    grid-area: zona-2;
+} 
+#layoutcontact>:last-child{
+    grid-area: zona-3;
+}
+
+/* Contact page Links */
+.contactlinks{
+    text-decoration: none;
+    color: var(--alb);
+    text-align: center;
+    font-size: xx-large;
+    padding-left: 20px;
+}

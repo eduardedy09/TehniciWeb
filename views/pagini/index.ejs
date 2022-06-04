@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <%- include('../fragmente/head'); %>
+</head>
+<body>
+<header>
+    <%- include('../fragmente/header'); %>
+</header>
+
+<main>
+  <div id="watermark"></div>
+  <div id="layout">
+    <div>
+      <section id="sale">
+        <h2>Reduceri</h2>
+        <h3>Lichidarea de stoc de face la ultimele mărimi de <b>încălțăminte sport</b> pe care le punem la dispoziția clienților noștri.</h3>
+            <img id="imgsale" src="/resurse/IMG/1.jpg" alt="Jordan 1 Mid Black-White" align="left">
+            <p id="description">
+            Jordan 1 Mid Black & White<br>
+            Preț: <s>800 RON</s> <ins>500 RON</ins><br>
+            Mărimi: 36, 37, 46
+            </p>
+      </section>
+
+    </div>
+    <div>
+      <div id="container">
+        <table>
+          <thead>
+          <tr>
+            <th></th>
+            <th>Brand</th>
+            <th>Anul apariției</th>
+            <th>Cerere</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>01</td>
+            <td>Nike</td>
+            <td>1964</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>02</td>
+            <td>Adidas</td>
+            <td>1949</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>03</td>
+            <td>Converse</td>
+            <td>1908</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>04</td>
+            <td>Puma</td>
+            <td>1948</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>05</td>
+            <td>Reebok</td>
+            <td>1895</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>06</td>
+            <td>Vans</td>
+            <td>1966</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>07</td>
+            <td>Asics</td>
+            <td>1977</td>
+            <td>&nbsp;</td>
+          </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="4">Cererile sunt din ce in ce mai mari!</td>
+            </tr>  
+          </tfoot>
+          <caption>Ce brand-uri aduce magazinul nostru</caption>
+        </table>
+        
+      </div>
+      
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat nunc metus, nec faucibus sapien vehicula vitae. Nunc pharetra, tortor eu fringilla bibendum, urna libero viverra diam, eget sodales ligula mauris eget lorem. Ut fermentum dui non augue accumsan consectetur. Proin vitae elementum nibh. Fusce quis arcu scelerisque, pretium ex in, blandit lectus. Morbi porta, purus eget luctus varius, orci risus ultricies neque, sit amet elementum nisl justo non orci. Fusce non ultrices risus. Phasellus a sem at orci pulvinar volutpat. In fringilla euismod dui, vitae facilisis enim ullamcorper vitae. Mauris tellus nulla, venenatis sed nibh ac, vulputate mattis nibh. Morbi in suscipit lorem.
+
+    </div>
+    <div>
+      <section id="news">
+        <h3><span class="fas fa-solid fa-newspaper fa-spin"></span> Am adaugat o noua sectiune pentru oamenii care sunt pasionați:</h3>
+      
+        <div class="tabiframe">
+          <a target="VidFrame" href="https://www.youtube.com/embed/_RcEqhKa5Ho">Info Resale</a>
+          <a target="VidFrame" href="https://www.youtube.com/embed/Ie8GtqJSEVk">Profit Resale</a>
+      </div>
+      <iframe name="VidFrame" width="400" height="200" src="https://www.youtube.com/embed/_RcEqhKa5Ho" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+    </div>
+    <div id="sectiune-galerie-statica">
+      <%- include('../fragmente/galerie'); %>
+    </div>
+    <div>
+      <section id="info">
+        <h2>Despre noi</h2>
+        <p>Suntem o echipă de câțiva pasionați de industria de <b>sneakers</b> care a luat mare amploare în ultima perioadă.</p>
+        <p>Ne-am gândit să facem resale în România la câteva modele de <b>adidași</b> cumpărați din alte țări. Toate modele pe care v-i le punem la dispoziție vin la pachet cu declarația de autenticitate a acestora.</p>
+        <p>Echipa noastră s-a creat în jurul problemei de care se lovesc toți tinerii în domeniul acesta, adică lipsa de modele și preturile exagerate ale adidașilor ediție limitata din România.</p>
+        <p>Ca inspirație ne-am luat după competitorii noștri de la <a href="https://sneakerindustry.ro/ro/" target="_blank">Sneaker Industry</a>.</p>
+        
+      </section>
+    </div>
+    <div id="vtt">
+      <%- "Ip-ul dumneavoastra este: " + locals.ip %>
+      <br>
+      Cuvandul cu Bold este la 1:33.
+      <br>
+      <video id="video" width="640" height="400" controls preload="metadata" poster="/resurse/IMG/poster.png">
+        <source src="/resurse/VIDEO/Parere.mp4" type="video/mp4">
+        <source src="/resurse/VIDEO/Parere.ogv" type="video/ogv">
+        <track default src="/resurse/VIDEO/parere.vtt" label="Romana" kind="captions" srclang="ro">
+        <track src="/resurse/VIDEO/parere-eng.vtt" label="Engleza" kind="captions" srclang="eng">
+     </video>
+    </div>
+    <div>
+      <section id="story">
+        <h2>Istoria Sneakerșilor</h2>
+        <p>
+          Sneakerșii (numiți și pantofi de atletism, tenisi, pantofi de sport) sunt pantofi concepuți în principal pentru sport sau alte forme de exerciții fizice, dar care acum sunt utilizați pe scară largă și pentru mersul de zi cu zi.
+          De la popularizarea lor de către companii precum Converse, Nike și Spalding la mijlocul secolului al XX-lea, acestea au devenit ținute, iar varietatea crește exponențial pe multe piețe globale. La fel ca și alte părți ale industriei globale de îmbrăcăminte, fabricarea de pantofi este puternic concentrată în Asia, nouă din zece pantofi fiind produși în acea regiune.
+          Adidașii contemporani sunt în mare parte fabricați din materiale sintetice, iar materialele și procesul de fabricație produc, în medie, aproximativ 14 kg (31 lb) de emisii de <i>CO2</i>. Unele companii încearcă să înlocuiască materiale mai durabile în fabricarea lor. Aproximativ 90% dintre pantofi ajung în gropile de gunoi la sfârșitul vieții.
+        </p>
+        <p>Echivalentul englezesc britanic al adidașilor în forma sa modernă este împărțit în două tipuri separate - preponderent pantofi de sport și la modă, pantofi de antrenament sau „pantofi de baschet” de calitate și, în contrast, „plimsolls” ieftini cu talpă de cauciuc, decoltate și cu vârf de pânză. În limba engleză Geordie, adidașii pot fi numiți și pantofi de nisip, cizme de gimnastică sau joggeri; în timp ce plimsolls pot fi denumiți ca daps în engleza galeză.</p>
+        <p>În Africa de Sud există mai mulți termeni pentru adidași, inclusiv pantofi de gimnastică, tennies, pantofi sport, sneaks și takkies. Alte nume pentru adidași includ pantofi de cauciuc în engleză filipineză, pantofi de sport în engleză Singapore, pantofi de pânză în engleză nigeriană, Camboo în engleză Ghana care înseamnă Camp boot și sportex în Grecia.</p>
+        <!-- Tagul i pentru cuvant din alta limba-->
+        <p><i>Plimsolls</i> (engleza britanică) sunt pantofi de atletism „low-tech” și se mai numesc „adidași” în engleza americană. Cuvântul „adidași” este adesea atribuit americanului Henry Nelson McKinney, care a fost agent de publicitate pentru N. W. Ayer & Son. În 1917, el a folosit termenul pentru că talpa de cauciuc îl făcea pe purtatorul pantofului să fie ascuns. Cuvântul era deja folosit cel puțin încă din 1887, când Boston Journal a făcut referire la „adidași” ca „numele pe care băieții îl dau pantofilor de tenis”. Numele „adidași” se referea inițial la cât de liniștite erau tălpile de cauciuc pe sol, spre deosebire de pantofii standard zgomotoși cu talpă din piele tare. Cineva care poartă adidași s-ar putea „furișa”, în timp ce cineva care poartă standarde nu ar putea.
+      Mai devreme, numele „sneaks” a fost folosit de deținuții pentru a se referi la gardieni din cauza pantofilor cu tălpi de cauciuc pe care îi purtau.</p>
+      </section>
+    </div>
+    </div> <br>
+  <hr><br>
+  <section id="FAQ">
+    <h2>
+      Întrebări frecvente:
+    </h2>
+    <details>
+      <summary>Unde se afla magazinul?</summary>
+      <p> Magazinul se afla la adresa Strada Secuilor 1, București, Sector 4.</p>
+    </details>
+
+    <details>
+      <summary>Ce produse vindeți?</summary>
+      <p>Facem resale la încălțăminte sport (sneakers) achiziționată din alte țări.</p>
+    </details>
+
+    <details>
+      <summary>Programul de lucru?</summary>
+      <p>
+        Luni-Vineri:08-22<br>
+        Sambata-Duminica:10-20<br>
+      </p>
+    </details>
+  </section>
+  <br>
+  <hr><br>
+</main>
+<footer>
+    <%- include('../fragmente/footer'); %>
+</footer>
+<div class="banner">
+Acesta este un proiect școlar!
+</div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+@import url("homepage.css");
+#watermark{
+    display:none;
+}
+@media print{
+    body{
+        background-color: var(--alb);
+        color: var(--negru);
+    }
+
+    #watermark
+    {
+        display: block;
+        position: fixed;
+        color:rgba(0,0,0,0.3);
+    }
+    #watermark::after{
+        padding:5px;
+        display:block;
+        align-self: center;
+        position: inherit;
+        margin-left: 275px;
+        width:60%;
+        height:10%;
+        font-size: 2rem;
+        text-align: center;
+        background: white;
+        opacity: 0.6;
+        border:2px double black;
+        content:"Marinache\a Eduard-Florin";
+        white-space: pre;
+    }
+
+    #layout>div{
+        border: 1px solid var(--negru);
+    }
+    a{
+        text-decoration: none !important;
+        color: white !important;
+    }
+    .banner
+    {
+        border: 0.6rem double black !important;
+        position:absolute !important;
+        height:20px;
+        width: 50%;
+        left:750px;
+        top:0px !important;
+        text-align: center;
+        animation: none;
+        visibility: visible;
+        color:var(--alb);
+    }
+    nav{
+        display:none;
+        page-break-before: always;
+    }
+    img{
+        display:none;
+    }
+
+    iframe{
+        display:none;
+    }
+
+    .tabs-iframe {
+        display:none;
+    }
+
+    .tabs-iframe a{
+        display:none;
+    }
+
+
+    figure{
+        display:none !important;
+    }
+    
+
+    #sectiune-galerie-statica{
+        display: none;
+    }
+
+
+    footer{
+        page-break-before: always;
+    }
+
+    .top{
+        display: hidden;
+    }
+}
+
+@page {
+    size: A4 portrait;
+    margin-bottom:2cm;
+    margin-top:2cm;
+    counter-increment: page; 
+}
+@page:left{
+    margin-left:2cm;
+    margin-right:1cm;
+}
+@page:right{
+    margin-right:2cm;
+    margin-left:1cm;
+}

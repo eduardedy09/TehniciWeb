@@ -1,0 +1,92 @@
+@import url("homepage.css");
+@media screen and (max-width:1200px) and (min-width:501px){
+    body{
+        font-size: 13px;
+    }
+    #layout div{
+        padding: 7px;
+    }
+    #layout{
+        display: grid;
+        grid-template-areas:"zona-1 zona-1 zona-3 zona-3"
+                            "zona-1 zona-1 zona-3 zona-3"
+                            "zona-2 zona-2 zona-4 zona-4"
+                            "zona-2 zona-2 zona-4 zona-4"
+                            "zona-8 zona-8 zona-7 zona-7"
+                            "zona-8 zona-8 zona-7 zona-7"
+                            "zona-5 zona-5 zona-6 zona-6"
+                            "zona-5 zona-5 zona-6 zona-6";
+        grid-template-rows: repeat(4,1fr);
+        width: 100%;
+    }
+    #layout>:first-child{
+        grid-area: zona-1;
+    } 
+    #layout>:nth-child(2){
+        grid-area: zona-3;
+    } 
+    #layout>:nth-child(3){
+        grid-area: zona-2;
+    }
+    #layout>:nth-child(4){
+        grid-area: zona-4;
+    }
+    #layout>:nth-child(5){
+        grid-area: zona-8;
+    }
+    #layout>:nth-child(6){
+        grid-area: zona-7;
+    } 
+    #layout>:nth-child(7){
+        grid-area: zona-5;
+    }
+    #layout>:last-child{
+        grid-area: zona-6;
+    }
+
+    img#imgsale{
+        max-width: 50%;
+        max-height: 50%;
+    }
+    p#description{
+        font-size:x-large;
+    }
+    
+    
+    /* Tabel */
+    table {
+        border:0.7px solid val(--gri-deschis);
+        border-collapse:collapse;
+        padding:3px;
+        width: 75%;
+    }
+    table th {
+        border:0.7px solid val(--gri-deschis);
+        padding:3px;
+    }
+    table td {
+        border:0.7px solid val(--gri-deschis);
+        padding:3px;
+    }
+
+    #galerie_statica{
+        display: grid;
+        grid-template-areas:"zona-1  zona-1  zona-2  zona-2"
+                            "zona-1  zona-1  zona-2  zona-2"
+                            "zona-3  zona-3  zona-4  zona-4"
+                            "zona-3  zona-3  zona-4  zona-4"
+                            "zona-5  zona-5  zona-6  zona-6"
+                            "zona-5  zona-5  zona-6  zona-6"
+                            "zona-7  zona-7  zona-8  zona-8"
+                            "zona-7  zona-7  zona-8  zona-8"
+                            "zona-9  zona-9  zona-10 zona-10"
+                            "zona-9  zona-9  zona-10 zona-10"
+                            "zona-11 zona-11 zona-12 zona-12"
+                            "zona-11 zona-11 zona-12 zona-12";
+        grid-template-rows: repeat(4,1fr);
+        width: 100%;
+    }
+    .banner{
+        animation: none;
+    }
+}

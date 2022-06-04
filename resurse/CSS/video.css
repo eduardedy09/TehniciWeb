@@ -1,0 +1,12 @@
+@import url("homepage.css");
+video{
+    border: 1px solid var(--alb);
+    margin-top: 30px;
+    }
+::cue{
+    background: var(--gri-inchis);
+    color: var(--alb);
+    text-align: left;
+}
+::cue(i) { font-style: italic; }
+::cue(b) { font-style: bold;}

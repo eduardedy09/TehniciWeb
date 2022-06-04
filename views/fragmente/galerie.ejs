@@ -1,0 +1,24 @@
+<section id="gs">
+    <h2>Galerie Statică</h2>
+    <div id="galerie_statica">
+        <% let imgCount = 0; %>
+      <% for (let imag of locals.IMG) {%>
+          <% if (imag.sfert_ora == sfert_curent){%>
+            <% if (imgCount < 10){%>
+                <% ++imgCount;%>
+          <figure>
+              <picture>
+                  <!-- il ia pe primul care se potriveste cu query-ul din media-->
+                  <!-- Nu mi le ia din foldere -->
+                  <source srcset="/<%- imag.mic%>" media="(max-width:500px)"/>
+                  <source srcset="/<%- imag.mediu%>" media="(max-width:1200px)"/>
+                  <img id="imggal" src="/<%- locals.cale + "/" + imag.cale_imagine %>" alt="text" title="<%- imag.descriere %>"/>
+              </picture>
+              <figcaption id="gal"><%- imag.titlu%></figcaption>
+          </figure>
+          <% } %>
+        <% } %>
+    <% } %>
+    </div>
+
+  </section>

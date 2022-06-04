@@ -1,0 +1,14 @@
+@import url("homepage.css");
+#err{
+    border: 1px solid var(--alb);
+    width: 100%;
+}
+#err img{
+    max-width: 60%;
+    max-height: 60%;
+    margin: auto;
+    display: block;
+}
+#err figcaption{
+    text-align: center;
+}

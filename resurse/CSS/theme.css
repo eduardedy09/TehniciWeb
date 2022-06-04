@@ -1,0 +1,21 @@
+
+
+.theme-switcher{
+    border: 1px solid var(--alb);
+    border-radius: 20px;
+    color:var(--alb);
+    background-color: var(--negru);
+    font-size: 30px;
+    padding: 10px;
+    position: absolute;
+    right: 20px;
+}
+
+.light-theme{
+    --negru: #FFFFFF;
+    --aproape-negru: #F3F3F3;
+    --gri-inchis:#E1E1E1;
+    --alb: #000000;
+    --aproape-alb:#141414;
+    --gri-deschis:#1B1B1B;;
+}
